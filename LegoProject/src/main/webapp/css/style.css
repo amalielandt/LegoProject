@@ -1,0 +1,143 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-03-2019, 19:12:20
+    Author     : sofieamalielandt
+*/
+
+.index div {
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 300px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    text-align: center;  
+}
+
+#index input{
+    position: static;  
+    width: 200px;
+    display: inline-block;
+    align-items: center;
+    background-color: whitesmoke; opacity: 1.0;
+    border: solid;
+    border-color: rgba(251, 13, 27, 1.0);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+#index button {
+    position: static; width: auto; 
+    display: inline-block;
+    align-items: center;
+    background-color: rgba(251, 13, 27, 1.0);
+    color: white;
+    border: none;
+    font-family: HelveticaNeue-Thin;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 9px;
+    border-radius: 10px;
+}
+
+#index input:hover  {
+    background-color: rgba(251, 13, 27, 1.0);
+    color: white;
+    border-radius: 10px;
+}
+
+
+#index button:hover {
+    background-color: rgba(251, 13, 27, 0.4);
+}
+body{
+    background-image: url("../images/lego.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Avenir Next;
+}
+
+#shop div {
+    border-style: none;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 700px;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+#shop td, #shop th {
+    padding: 8px;
+    text-align: center;
+
+}
+
+#shop th img {
+    opacity: 1.0;
+    display: -webkit-flex;
+    -webkit-align-items: center; 
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+    width: 60px;
+    height: 50px;
+    text-decoration: none; 
+
+}
+
+#shop input{
+    position: static;  
+    width: 50px;
+    display: inline-block;
+    align-items: center;
+    background-color: whitesmoke; opacity: 1.0;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+#shop button {
+    position: static; width: auto; 
+    display: inline-block;
+    align-items: center;
+    background-color: rgba(251, 13, 27, 1.0);
+    color: white;
+    border: none;
+    font-family: HelveticaNeue-Thin;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 9px;
+    border-radius: 10px;
+}
+
+
+#shop input:hover  {
+    background-color: rgba(251, 13, 27, 1.0);
+    color: white;
+    border-radius: 10px;
+}
+
+
+#shop button:hover {
+    background-color: rgba(251, 13, 27, 0.4);
+}
+
+
+
+
