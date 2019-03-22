@@ -59,19 +59,9 @@ and open the template in the editor.
 #index button:hover {
     background-color: rgba(251, 13, 27, 0.4);
 }
-body{
-    background-image: url("../images/lego.png");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Avenir Next;
-}
 
 #shop div {
     border-style: none;
-    border-color: whitesmoke;
     border-radius: 10px;
     padding: 25px;
     box-sizing: border-box;
@@ -86,7 +76,6 @@ body{
 }
 
 #shop th img {
-    opacity: 1.0;
     display: -webkit-flex;
     -webkit-align-items: center; 
     display: block;
@@ -103,7 +92,7 @@ body{
     width: 50px;
     display: inline-block;
     align-items: center;
-    background-color: whitesmoke; opacity: 1.0;
+    background-color: transparent;
     border: none;
     text-decoration: none;
     font-size: 16px;
@@ -138,6 +127,15 @@ body{
     background-color: rgba(251, 13, 27, 0.4);
 }
 
+body{
+    background-image: url("../images/lego.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Avenir Next;
+}
 
 
 

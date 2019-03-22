@@ -19,9 +19,9 @@
             <table> 
                 <tr>
                     <th><b>Measurements</b></th>
-                    <th><b>2x1</b></th>
-                    <th><b>2x2</b></th>
-                    <th><b>2x4</b></th>
+                    <th><img src="images/2x1.png" width="70%"></th>
+                    <th><img src="images/2x2.png" width="50%"></th>
+                    <th><img src="images/2x4.png" width="20%"></th>
                 </tr>
                 <%
                     if (list != null)
