@@ -7,7 +7,6 @@ package Presentation;
 
 import Data.DataException;
 import Function.FunctionManager;
-import java.sql.SQLException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -17,5 +16,5 @@ import javax.servlet.http.HttpServletResponse;
  */
 public interface Command
 {
-    String execute(HttpServletRequest request, HttpServletResponse response, FunctionManager manager) throws CommandException, DataException, SQLException;
+    String execute(HttpServletRequest request, HttpServletResponse response, FunctionManager manager) throws CommandException, DataException;
 }

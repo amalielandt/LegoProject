@@ -32,12 +32,12 @@ public class FunctionManager
         return instance;
     }
 
-    public User login(String email, String password) throws DataException, SQLException
+    public User login(String email, String password) throws DataException
     {
         return db.login(email, password);
     }
 
-    public String createUser(User user) throws DataException, SQLException
+    public String createUser(User user) throws DataException
     {
         String res = "";
         List<User> users = db.getUsers();
@@ -60,7 +60,7 @@ public class FunctionManager
         return res;
     }
 
-    public void isShipped(Order order) throws SQLException, DataException
+    public void isShipped(Order order) throws DataException
     {
         String shipped = db.orderShipped(order.getOrder_id());
         order.setShipped(shipped);
@@ -79,7 +79,7 @@ public class FunctionManager
         return null;
     }
 
-    public String placeOrder(Order order) throws DataException, SQLException
+    public String placeOrder(Order order) throws DataException
     {
         String res = "";
 
@@ -96,17 +96,17 @@ public class FunctionManager
 
     }
     
-    public Order getOrder(int order_id) throws SQLException, DataException
+    public Order getOrder(int order_id) throws DataException
     {
         return db.getOrder(order_id);
     }
     
-    public List<Order> getOrders(User user) throws SQLException, DataException
+    public List<Order> getOrders(User user) throws  DataException
     {
         return db.getOrders(user.getUser_id());
     }
     
-    public List<Order> getAllOrders() throws SQLException, DataException
+    public List<Order> getAllOrders() throws  DataException
     {
         return db.getAllOrders();
     }

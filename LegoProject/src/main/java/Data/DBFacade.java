@@ -7,7 +7,6 @@ package Data;
 
 import Function.Order;
 import Function.User;
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -37,48 +36,48 @@ public class DBFacade
         return instance;
     }
 
-    public User login(String email, String password) throws DataException, SQLException
+    public User login(String email, String password) throws DataException
     {
         return um.login(email, password);
     }
 
-    public void createUser(User user) throws DataException, SQLException
+    public void createUser(User user) throws DataException
     {
         um.createUser(user);
     }
 
-    public User getUser(int user_id) throws DataException, SQLException
+    public User getUser(int user_id) throws DataException
     {
         return um.getUser(user_id);
     }
     
-    public List<User> getUsers() throws SQLException, DataException
+    public List<User> getUsers() throws DataException
     {
         return um.getUsers();
     }
 
-    public void placeOrder(Order order) throws DataException, SQLException
+    public void placeOrder(Order order) throws DataException
     {
         om.placeOrder(order);
 
     }
 
-    public String orderShipped(int order_id) throws DataException, SQLException
+    public String orderShipped(int order_id) throws DataException
     {
         return om.orderShipped(order_id);
     }
 
-    public Order getOrder(int order_id) throws SQLException, DataException
+    public Order getOrder(int order_id) throws DataException
     {
         return om.getOrder(order_id);
     }
     
-    public List<Order> getOrders(int user_id) throws SQLException, DataException
+    public List<Order> getOrders(int user_id) throws DataException
     {
         return om.getOrders(user_id);
     }
     
-    public List<Order> getAllOrders() throws SQLException, DataException
+    public List<Order> getAllOrders() throws DataException
     {
         return om.getAllOrders();
     }

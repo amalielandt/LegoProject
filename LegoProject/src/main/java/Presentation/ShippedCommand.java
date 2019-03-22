@@ -27,7 +27,7 @@ public class ShippedCommand implements Command
     }
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response, FunctionManager manager) throws CommandException, DataException, SQLException
+    public String execute(HttpServletRequest request, HttpServletResponse response, FunctionManager manager) throws CommandException, DataException
     {
          HttpSession session = request.getSession();
          
