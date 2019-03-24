@@ -9,15 +9,15 @@ and open the template in the editor.
 */
 
 .index div {
-    border-style: solid;
-    border-color: whitesmoke;
+    border-style: none;
     border-radius: 10px;
     padding: 25px;
     box-sizing: border-box;
     width: 300px;
-    background-color: rgba(251, 13, 27, 0.8);
-    text-align: center;  
+    background-color: rgba(245, 245, 245, 0.8);
+    text-align: center; 
 }
+
 
 #index input{
     position: relative;  

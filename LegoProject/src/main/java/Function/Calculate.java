@@ -12,13 +12,15 @@ import java.util.HashMap;
  */
 public class Calculate
 {
-    private HashMap<String, Integer> calcWall(int length, int height)
+    public HashMap<String, Integer> calcWall(int length, int height)
     {
         HashMap<String, Integer> wall = new HashMap<>();
         int remain = length - 2;
         wall.put("2x4", 0);
         wall.put("2x2", 0);
         wall.put("2x1", 0);
+        wall.put("length", length);
+        wall.put("height", height);
 
         if (remain > 4)
         {
@@ -40,24 +42,15 @@ public class Calculate
         return wall;
     }
 
-    public HashMap<String, Integer> calcHouse(Order order)
+    public HashMap<String, Integer> calcHouse( HashMap<String, Integer> wall1, HashMap<String, Integer> wall2)
     {
         HashMap<String, Integer> legohouse = new HashMap<>();
 
-        if (order.getLength() > 4 || order.getWidth() > 4)
-        {
-            HashMap<String, Integer> wall1 = calcWall(order.getLength(), order.getHeight());
-            HashMap<String, Integer> wall2 = calcWall(order.getWidth(), order.getHeight());
 
             legohouse.put("2x1", (wall1.get("2x1") * 2) + (wall2.get("2x1") * 2));
             legohouse.put("2x2", (wall1.get("2x2") * 2) + (wall2.get("2x2") * 2));
             legohouse.put("2x4", (wall1.get("2x4") * 2) + (wall2.get("2x4") * 2));
 
             return legohouse;
-            
-        } else
-        {
-            return null;
-        }
     }
 }

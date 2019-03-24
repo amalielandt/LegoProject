@@ -68,15 +68,21 @@ public class FunctionManager
 
     public ItemList calcLegoHouse(Order order)
     {
-        HashMap<String, Integer> legohouse = c.calcHouse(order);
-
-        if (legohouse != null)
+        if (order.getLength() > 4 || order.getWidth() > 4 || order.getHeight() >= 1)
         {
-            ItemList lego = new ItemList(legohouse);
-            return lego;
-        }
+            HashMap<String, Integer> wall1 = c.calcWall(order.getLength(), order.getHeight());
+            HashMap<String, Integer> wall2 = c.calcWall(order.getWidth(), order.getHeight());
 
-        return null;
+            HashMap<String, Integer> legohouse = c.calcHouse(wall1, wall2);
+
+            ItemList lego = new ItemList(legohouse, wall1, wall2);
+            return lego;
+
+        } else
+        {
+
+            return null;
+        }
     }
 
     public String placeOrder(Order order) throws DataException
@@ -95,18 +101,18 @@ public class FunctionManager
         return res;
 
     }
-    
+
     public Order getOrder(int order_id) throws DataException
     {
         return db.getOrder(order_id);
     }
-    
-    public List<Order> getOrders(User user) throws  DataException
+
+    public List<Order> getOrders(User user) throws DataException
     {
         return db.getOrders(user.getUser_id());
     }
-    
-    public List<Order> getAllOrders() throws  DataException
+
+    public List<Order> getAllOrders() throws DataException
     {
         return db.getAllOrders();
     }

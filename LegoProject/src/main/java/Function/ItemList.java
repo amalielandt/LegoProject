@@ -14,10 +14,14 @@ import java.util.HashMap;
 public class ItemList
 {
     private HashMap<String, Integer> legohouse;
+    private HashMap<String, Integer> wall1;
+    private HashMap<String, Integer> wall2;
 
-    public ItemList(HashMap<String, Integer> legohouse)
+    public ItemList(HashMap<String, Integer> legohouse, HashMap<String, Integer> wall1, HashMap<String, Integer> wall2)
     {
         this.legohouse = legohouse;
+        this.wall1 = wall1;
+        this.wall2 = wall2;
     }
 
     public HashMap<String, Integer> getLegohouse()
@@ -25,19 +29,14 @@ public class ItemList
         return legohouse;
     }
 
-    public int get2x4()
+    public HashMap<String, Integer> getWall1()
     {
-        return legohouse.get("2x4");
+        return wall1;
     }
-
-    public int get2x2()
+    
+    public HashMap<String, Integer> getWall2()
     {
-        return legohouse.get("2x2");
-    }
-
-    public int get2x1()
-    {
-        return legohouse.get("2x1");
+        return wall2;
     }
     
 }

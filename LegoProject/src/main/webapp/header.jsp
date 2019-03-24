@@ -19,7 +19,7 @@
                 overflow: hidden;
                 background-color: whitesmoke;
                 position: fixed;
-                top: 5%;
+                top: 0;
                 left: 0;
                 width: 100%;  
                 height: 80px;
@@ -83,7 +83,7 @@
             #menu img{
                 position: fixed;
                 left:0;
-                top: 16%;
+                top: 11%;
             }
 
             #cart li a img {
@@ -159,6 +159,6 @@
     <center id="menu">
         <img src="images/legobricks.png" width="100%">
     </center>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
 

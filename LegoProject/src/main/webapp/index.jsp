@@ -11,17 +11,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>LEGOHOUSE</title>  
-        <style>
-            .index input[type=radio]{
-                display: inline;
-               align-items: center;
-            }
-
-            .index span {
-                position:absolute;
-                left: 47%;
-            }
-        </style>
     </head>
     <body>
         <%
@@ -38,8 +27,8 @@
                 PASSWORD <input type ="password" name ="password" value="" minlength="4" required>
                 <br><br>
                 <button name="command" value="login">Login</button><br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="role" id="customer" value="customer" checked="checked"><span>CUSTOMER</span></label>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="role" id="employee" value="employee"><span>EMPLOYEE</span></label><br><br>
+                <label><input type="radio" name="role" id="customer" value="customer" checked="checked"><span>CUSTOMER</span></label>
+                 <label><input type="radio" name="role" id="employee" value="employee"><span>EMPLOYEE</span></label><br><br>
                 <button name="command" value="createuser">Create user</button>
 
                 <%
@@ -51,10 +40,7 @@
                 %>
             </form> 
         </div> 
-
     </center>
-
-
 </body>
 </html>
 
