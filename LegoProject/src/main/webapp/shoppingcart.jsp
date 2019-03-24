@@ -39,17 +39,17 @@
                         out.println("</tr>");
                         
                         out.println("<tr>");
-                        out.println("<td>Wall 3 (" + list.getWall1().get("height") + "x" + list.getWall1().get("length") + ")</td>");
-                        out.println("<td>" + list.getWall1().get("2x1") + "&nbsp;&nbsp;stk. </td>");
-                        out.println("<td>" + list.getWall1().get("2x2") + "&nbsp;&nbsp;stk. </td>");
-                        out.println("<td>" + list.getWall1().get("2x4") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>Wall 3 (" + list.getWallwithdoor().get("height") + "x" + list.getWallwithdoor().get("length") + ") with door</td>");
+                        out.println("<td>" + list.getWallwithdoor().get("2x1") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>" + list.getWallwithdoor().get("2x2") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>" + list.getWallwithdoor().get("2x4") + "&nbsp;&nbsp;stk. </td>");
                         out.println("</tr>");
                         
                         out.println("<tr>");
-                        out.println("<td>Wall 4 (" + list.getWall2().get("height") + "x" + list.getWall2().get("length") + ")</td>");
-                        out.println("<td>" + list.getWall2().get("2x1") + "&nbsp;&nbsp;stk. </td>");
-                        out.println("<td>" + list.getWall2().get("2x2") + "&nbsp;&nbsp;stk. </td>");
-                        out.println("<td>" + list.getWall2().get("2x4") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>Wall 4 (" + list.getWallwithwindow().get("height") + "x" + list.getWallwithwindow().get("length") + ") with window</td>");
+                        out.println("<td>" + list.getWallwithwindow().get("2x1") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>" + list.getWallwithwindow().get("2x2") + "&nbsp;&nbsp;stk. </td>");
+                        out.println("<td>" + list.getWallwithwindow().get("2x4") + "&nbsp;&nbsp;stk. </td>");
                         out.println("</tr>");
                         
                         out.println("<tr>");

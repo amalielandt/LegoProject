@@ -11,11 +11,11 @@
 <center id="shop"> 
     <div>       
         <form action="Legohouse" method="post">
-            HEIGTH (bricks) <input type ="number" name ="height" value="0" min="1" required> 
+            HEIGTH (bricks) <input type ="number" name ="height" value="0" min="5" required> 
             &nbsp;&nbsp;
-            LENGTH (dots) <input type ="number" name ="length" value="0"  min="5" required> 
+            LENGTH (dots) <input type ="number" name ="length" value="0"  min="12" required> 
             &nbsp;&nbsp;
-            WIDTH (dots) <input type ="number" name ="width" value="0" min="5" required>     
+            WIDTH (dots) <input type ="number" name ="width" value="0" min="12" required>     
 
             <%
                 if (message != null)

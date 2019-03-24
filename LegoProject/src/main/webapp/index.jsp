@@ -11,6 +11,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>LEGOHOUSE</title>  
+        <style>
+            .index div {
+                border-style: none;
+                border-radius: 10px;
+                padding: 25px;
+                box-sizing: border-box;
+                width: 400px;
+                background-color: rgba(245, 245, 245, 0.8);
+                text-align: center; 
+            }
+        </style>
     </head>
     <body>
         <%
@@ -20,15 +31,15 @@
     <center class="index" id="index"> 
         <img src="images/people.png" width="20%">
         <div>
-            <p>ENTER EMAIL AND PASSWORD</p><br>   
+            <p>ENTER EMAIL AND PASSWORD</p>
             <form action="Legohouse" method="post">
-                EMAIL <input type ="text" name ="email" value="" minlength="4" required>
+                <input type ="text" name ="email" placeholder="EMAIL" value="" minlength="4" required>
                 <br><br>
-                PASSWORD <input type ="password" name ="password" value="" minlength="4" required>
+                <input type ="password" name ="password" placeholder="PASSWORD" value="" minlength="4" required>
                 <br><br>
                 <button name="command" value="login">Login</button><br><br>
                 <label><input type="radio" name="role" id="customer" value="customer" checked="checked"><span>CUSTOMER</span></label>
-                 <label><input type="radio" name="role" id="employee" value="employee"><span>EMPLOYEE</span></label><br><br>
+                <label><input type="radio" name="role" id="employee" value="employee"><span>EMPLOYEE</span></label><br><br>
                 <button name="command" value="createuser">Create user</button>
 
                 <%

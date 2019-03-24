@@ -16,12 +16,16 @@ public class ItemList
     private HashMap<String, Integer> legohouse;
     private HashMap<String, Integer> wall1;
     private HashMap<String, Integer> wall2;
+    private HashMap<String, Integer> wallwithdoor;
+    private HashMap<String, Integer> wallwithwindow;
 
-    public ItemList(HashMap<String, Integer> legohouse, HashMap<String, Integer> wall1, HashMap<String, Integer> wall2)
+    public ItemList(HashMap<String, Integer> legohouse, HashMap<String, Integer> wall1, HashMap<String, Integer> wall2, HashMap<String, Integer> wallwithdoor, HashMap<String, Integer> wallwithwindow)
     {
         this.legohouse = legohouse;
         this.wall1 = wall1;
         this.wall2 = wall2;
+        this.wallwithdoor = wallwithdoor;
+        this.wallwithwindow = wallwithwindow;
     }
 
     public HashMap<String, Integer> getLegohouse()
@@ -37,6 +41,16 @@ public class ItemList
     public HashMap<String, Integer> getWall2()
     {
         return wall2;
+    }
+
+    public HashMap<String, Integer> getWallwithdoor()
+    {
+        return wallwithdoor;
+    }
+
+    public HashMap<String, Integer> getWallwithwindow()
+    {
+        return wallwithwindow;
     }
     
 }

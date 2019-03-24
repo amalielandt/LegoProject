@@ -68,14 +68,16 @@ public class FunctionManager
 
     public ItemList calcLegoHouse(Order order)
     {
-        if (order.getLength() > 4 || order.getWidth() > 4 || order.getHeight() >= 1)
+        if (order.getLength() >= 12 || order.getWidth() >= 12 || order.getHeight() >= 5)
         {
             HashMap<String, Integer> wall1 = c.calcWall(order.getLength(), order.getHeight());
             HashMap<String, Integer> wall2 = c.calcWall(order.getWidth(), order.getHeight());
+            HashMap<String, Integer> wallwithdoor = c.calcWallDoor(order.getLength(), order.getHeight());
+            HashMap<String, Integer> wallwithwindow = c.calcWallWindow(order.getWidth(), order.getHeight());
 
-            HashMap<String, Integer> legohouse = c.calcHouse(wall1, wall2);
+            HashMap<String, Integer> legohouse = c.calcHouse(wall1, wall2, wallwithdoor, wallwithwindow);
 
-            ItemList lego = new ItemList(legohouse, wall1, wall2);
+            ItemList lego = new ItemList(legohouse, wall1, wall2, wallwithdoor, wallwithwindow);
             return lego;
 
         } else
