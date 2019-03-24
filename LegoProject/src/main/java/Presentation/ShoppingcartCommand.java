@@ -10,7 +10,6 @@ import Function.FunctionManager;
 import Function.ItemList;
 import Function.Order;
 import Function.User;
-import java.sql.SQLException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -47,7 +46,7 @@ public class ShoppingcartCommand implements Command
 
             Order order = new Order(user, width, length, height);
             session.setAttribute("order", order);
-           
+
             ItemList list = manager.calcLegoHouse(order);
 
             if (list != null)
@@ -55,12 +54,6 @@ public class ShoppingcartCommand implements Command
                 session.setAttribute("list", list);
                 return target;
             }
-
-//        } else if (length_input == null || width_input == null || height_input == null)
-//        {
-//            String message = "Please enter measurements for your legohouse";
-//            session.setAttribute("message", message);
-//            return "shop.jsp";
 
         } else
         {

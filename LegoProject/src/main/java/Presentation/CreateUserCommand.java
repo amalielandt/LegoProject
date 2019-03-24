@@ -8,7 +8,6 @@ package Presentation;
 import Data.DataException;
 import Function.FunctionManager;
 import Function.User;
-import java.sql.SQLException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -34,10 +33,11 @@ public class CreateUserCommand implements Command
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String role = request.getParameter("role");
 
         if (password != null && email != null)
         {
-            User user = new User(password, email);
+            User user = new User(password, email, role);
             String message = manager.createUser(user);
             session.setAttribute("message", message);
 

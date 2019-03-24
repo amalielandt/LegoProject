@@ -15,25 +15,24 @@ and open the template in the editor.
     padding: 25px;
     box-sizing: border-box;
     width: 300px;
-    background-color: whitesmoke;
-    opacity: 0.8;
+    background-color: rgba(251, 13, 27, 0.8);
     text-align: center;  
 }
 
 #index input{
-    position: static;  
-    width: 200px;
+    position: relative;  
     display: inline-block;
     align-items: center;
-    background-color: whitesmoke; opacity: 1.0;
+    background-color: transparent;
     border: solid;
     border-color: rgba(251, 13, 27, 1.0);
     text-decoration: none;
     font-size: 16px;
     text-align: center;
     padding: 5px 5px;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
+
 
 #index button {
     position: static; width: auto; 
@@ -136,6 +135,7 @@ body{
     background-size: cover;
     font-family: Avenir Next;
 }
+
 
 
 

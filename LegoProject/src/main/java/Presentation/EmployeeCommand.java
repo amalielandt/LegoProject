@@ -8,7 +8,6 @@ package Presentation;
 import Data.DataException;
 import Function.FunctionManager;
 import Function.Order;
-import java.sql.SQLException;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
