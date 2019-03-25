@@ -2,7 +2,6 @@ package Function;
 
 import Data.DBFacade;
 import Data.DataException;
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -118,4 +117,6 @@ public class FunctionManager
     {
         return db.getAllOrders();
     }
+    
+    
 }

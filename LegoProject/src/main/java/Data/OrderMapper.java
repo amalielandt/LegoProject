@@ -37,11 +37,12 @@ public class OrderMapper
         {
             dbc.open();
             
-            String query = "INSERT INTO LegoHouse.order"
+            String query = "INSERT INTO LegoHouse.`order`"
                     + "(`user_id`,`length`, `width`,`height`)"
                     + "VALUES (?,?,?,?);";
             
             int user_id = order.getUser().getUser_id();
+            System.out.println(order.getUser().getUser_id());
             int length = order.getLength();
             int width = order.getWidth();
             int height = order.getHeight();
