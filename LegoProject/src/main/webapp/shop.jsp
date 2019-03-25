@@ -11,7 +11,7 @@
 <center id="shop"> 
     <div>       
         <form action="Legohouse" method="post">
-            HEIGTH (bricks) <input type ="number" name ="height" value="0" min="5" required> 
+            HEIGTH (bricks) <input type ="number" name ="height" value="0" min="6" required> 
             &nbsp;&nbsp;
             LENGTH (dots) <input type ="number" name ="length" value="0"  min="12" required> 
             &nbsp;&nbsp;
