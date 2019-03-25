@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file = "header.jsp" %>
         <%
-            String message = (String) session.getAttribute("message");
+            String message = (String) request.getAttribute("message");
         %>
     <center id="shop"> 
         <div>       
@@ -16,7 +16,6 @@
                     if (message != null)
                     {
                         out.println("<br><br><br>" + message);
-                        session.removeAttribute("message");
                     }
                 %>
 
